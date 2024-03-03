@@ -1,0 +1,20 @@
+.pages_container {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 71px);
+  overflow: scroll;
+  padding: 0px;
+}
+.outlet {
+  overflow: auto;
+  width: calc(100% - 340px);
+  height: calc(100vh - 65px);
+  position: fixed;
+  left: 340px;
+}
+@media (max-width: 860px) {
+  .outlet {
+    width: 100%;
+    left: 0;
+  }
+}

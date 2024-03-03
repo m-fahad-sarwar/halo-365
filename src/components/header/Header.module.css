@@ -1,0 +1,87 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 30px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.logoContainer h1 {
+  font-size: 2rem;
+  color: #47619b;
+  margin: 0;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logoContainer h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.subMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.notification span {
+  position: absolute;
+  top: -0.8rem;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+@media (max-width: 860px) {
+  .main {
+    padding: 0 20px;
+  }
+  .logoContainer h1 {
+    font-size: 1.5rem;
+  }
+  .logoContainer h3 {
+    font-size: 1.1rem;
+  }
+  .logoContainer {
+    gap: 10px;
+  }
+  .date {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
